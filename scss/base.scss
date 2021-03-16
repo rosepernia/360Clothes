@@ -1,4 +1,5 @@
 @import './components/ej';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 
 :root{
@@ -60,11 +61,29 @@ html {
       display: flex;
       justify-content: center;
   }
-  .header__logo{
+  .header__logo {
       margin: 2rem 0;
-      width:180px;
-      height: 150px;
+      width:130px;
+      height: 110px;
       
   }
+  .navigator {
+    background-color: var(--primario-Oscuro);  
+    padding:1.5em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .navigator__enlace {
+    font-family: var(--fuentePrincipal); 
+    color: var(--blanco); 
+    font-size: 20px;
+  }
+  .navigator__enclace--activo,
+  .navigator__enlace:hover {
+    color: var(--secundario); 
+  }
+
+
 
   
