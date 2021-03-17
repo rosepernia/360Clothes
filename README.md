@@ -1,2 +1,2 @@
 # FrontEndStore_inicio
-Proyecto tienda online con metodología BEM.
+Proyecto front tienda online con metodología BEM.

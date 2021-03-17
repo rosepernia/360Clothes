@@ -5,7 +5,8 @@
 :root{
     --primario:#35ffda;
     --primario-Oscuro: #2fe3c2;
-    --secundario: #222222;
+    --secundario: #35ffff;
+    --oscuro: #1d1a1a;
     --blanco: #fff;
 
     --fuente-principal:'Raleway', sans-serif;
@@ -29,7 +30,7 @@ html {
   p {
     font-size: 1.8rem;
     font-family: var(--fuentePrincipal); 
-    color: var(--negro)
+    color: var(--oscuro)
   }
   a {
     text-decoration: none;
@@ -43,17 +44,17 @@ html {
   }
   h1, h2, h3 {
     text-align: center;
-    color: var(--blanco);
-    font-family: var(--fuentePrincipal); 
+    color: var(--oscuro);
+    font-family: 'Raleway', sans-serif;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 3.2rem;
+    font-size: 1.4rem;
   }
   h3 {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
 
   /** Header **/
@@ -67,19 +68,36 @@ html {
       height: 110px;
       
   }
+   /** Footer **/
+  .footer {
+    background-color: var(--oscuro);  
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  .footer__texto {
+    text-align: center;
+    color: var(--blanco); 
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+  }
+    /** Navegador **/
   .navigator {
-    background-color: var(--primario-Oscuro);  
+    background-color: var(--oscuro);  
     padding:1.5em 0;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 10px;
   }
   .navigator__enlace {
-    font-family: var(--fuentePrincipal); 
+    font-family: 'Raleway', sans-serif;
     color: var(--blanco); 
     font-size: 20px;
+    margin-right: 10px;
   }
-  .navigator__enclace--activo,
+  .navigator__enclace--activo{
+    color: var(--secundario); 
+  }
   .navigator__enlace:hover {
     color: var(--secundario); 
   }
